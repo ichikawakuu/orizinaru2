@@ -19,11 +19,7 @@ public class GameOverController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //// 左クリックしたらスタート画面(仮)
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    SceneManager.LoadScene("StartScene");
-        //}
+        
     }
     public void OnClick()
     {
