@@ -25,22 +25,12 @@ public class Mousecheck : MonoBehaviour
         {
             // 当たったオブジェクトの名前を表示
             Debug.Log("当たったオブジェクト: " + hitInfo.collider.gameObject.name);
-            // 問答無用でどっちも持ってるという判定のせいでエラー
-            // 解決法１　マウスが当たって呼ばれる関数を他で１つ作り、継承して呼び出しオーバーライドする　正攻法
-            // 解決法２　タグを付けてそれぞれ分岐させる　　邪道
-            //GameObject hoge;
-            //GameObject cube = GameObject.FindWithTag("Cube");
-            //GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
-            //GameObject Holecube = GameObject.FindWithTag("HoleCube");
-            //if (/*hogeのタグがCubeと同じだったら*/)
 
             // そのオブジェクトのタグがCubeだったら
             if (hitInfo.collider.gameObject.CompareTag("Cube"))
             {
                 hitInfo.collider.gameObject.GetComponent<CubeContorller>().DontMoveCube();
-                //Debug.Log("キューブです");
             }
-            //if (/*hogeのタグがHoleCubeと同じだったら*/)
             // そのオブジェクトのタグがHoleCubeだったら
             else if (hitInfo.collider.gameObject.CompareTag("HoleCube"))
             {

@@ -28,19 +28,8 @@ public class StartController : MonoBehaviour
         nextController = NEXT.GetComponent<NextButtonController>();
 
         NextButtonController.NextStage = 0;
-        //nextController.newStart();
 
         audioSource = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //// エンター押したらゲーム画面(仮)
-        //if (Input.GetKeyDown(KeyCode.Return))
-        //{
-        //    SceneManager.LoadScene("GameScene");
-        //}
     }
     // ボタンを押したらゲーム開始
     public void OnClick()

@@ -57,14 +57,12 @@ public class StartCubeContoroller : MonoBehaviour
                     StopMoveY = true;
                     StopMoveX = false;
                     moveY = false;
-                    //Debug.Log("超えたよ");
                 }
                 if (pos.x < -3.5)
                 {
                     StopMoveY = true;
                     StopMoveX = false;
                     moveY = true;
-                    //Debug.Log("超えたよ");
                 }
             }
             // y軸の移動
@@ -81,7 +79,6 @@ public class StartCubeContoroller : MonoBehaviour
                     StopMoveY = false;
                     StopMoveX = true;
                     moveX = false;
-                    //Debug.Log("超えたよ2");
                 }
             }
             
@@ -123,7 +120,6 @@ public class StartCubeContoroller : MonoBehaviour
     // マウスが当たっていたら
     public void DontMoveCube()
     {
-        //Debug.Log("エスカトロジー");
         // この障害物が止まっていなかったら
         if (moveFlag)
         {
@@ -131,7 +127,6 @@ public class StartCubeContoroller : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(ClickSE);
-                //Debug.Log("エスカトロジー");
                 moveFlag = false;
                 this.GetComponent<MeshRenderer>().material = mat;
             }
@@ -143,7 +138,6 @@ public class StartCubeContoroller : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(ClickSE);
-                //Debug.Log(moveFlag);
                 moveFlag = true;
                 this.GetComponent<MeshRenderer>().material = mat2;
             }

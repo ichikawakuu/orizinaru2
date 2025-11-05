@@ -38,21 +38,6 @@ public class NextButtonController : MonoBehaviour
     // ボタンが押されたら次のステージ
     public void OnClick()
     {
-        //// falseなら最初から
-        //if (!StartController.New)
-        //{
-        //    NextStage = 1;
-        //    Debug.Log(NextStage);
-        //    SceneManager.LoadScene("GameScene");
-        //}
-        //
-        //// 前回の続きNewがTrueになってるnewStartで値が変わっていない可能性あり
-        //else if (StartController.New)
-        //{
-        //    NextStage++;
-        //    Debug.Log(NextStage);
-        //    SceneManager.LoadScene("GameScene");
-        //}
         audioSource.PlayOneShot(SE);
         StartController.StageCount += 1;
         NextStage += 1;

@@ -262,28 +262,6 @@ public class CubeContorller : MonoBehaviour
                         myTransform.position = pos;
                     }
 
-                    //if (pos.x > 41)
-                    //{
-                    //    moveX = true;
-                    //}
-                    //else if (pos.x < 39)
-                    //{
-                    //    moveX = false;
-                    //}
-                    //
-                    //if (moveX)
-                    //{
-                    //    pos.x -= 0.05f;
-                    //
-                    //    myTransform.position = pos;
-                    //}
-                    //else if (!moveX)
-                    //{
-                    //    pos.x += 0.05f;
-                    //
-                    //    myTransform.position = pos;
-                    //}
-
                     break;
 
                 // 3ƒXƒe‰E
@@ -325,14 +303,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveZ = false;
                             moveX = true;
                             Debug.Log("’´‚¦‚½‚æ");
-                            //Debug.Log(StopMoveZ);
                         }
                         else if (pos.z < -0.3)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -344,7 +320,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                             
                         }
                         else if (pos.x < 79.7)
@@ -352,7 +327,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = true;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -402,14 +376,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveZ = false;
                             moveX = true;
                             Debug.Log("’´‚¦‚½‚æ");
-                            //Debug.Log(StopMoveZ);
                         }
                         else if (pos.z < -1.8)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -421,7 +393,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
 
                         }
                         else if (pos.x < 80)
@@ -429,7 +400,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = true;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -479,14 +449,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveZ = false;
                             moveX = true;
                             Debug.Log("’´‚¦‚½‚æ");
-                            //Debug.Log(StopMoveZ);
                         }
                         else if (pos.z < 1.2)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -498,7 +466,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
 
                         }
                         else if (pos.x < 79.4)
@@ -506,7 +473,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = true;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -556,14 +522,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveZ = false;
                             moveX = true;
                             Debug.Log("’´‚¦‚½‚æ");
-                            //Debug.Log(StopMoveZ);
                         }
                         else if (pos.z < -3)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -575,7 +539,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
 
                         }
                         else if (pos.x < 78.5f)
@@ -583,7 +546,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = true;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -659,14 +621,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                         if (pos.z < -1)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -683,7 +643,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = true;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -732,14 +691,12 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = false;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                         if (pos.z < -2)
                         {
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            //Debug.Log("’´‚¦‚½‚æ");
                         }
                     }
                     // xŽ²‚ÌˆÚ“®
@@ -756,7 +713,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
-                            //Debug.Log("’´‚¦‚½‚æ2");
                         }
                     }
 
@@ -806,16 +762,13 @@ public class CubeContorller : MonoBehaviour
     // ƒ}ƒEƒX‚ª“–‚½‚Á‚Ä‚¢‚½‚ç
     public void DontMoveCube()
     {
-        //Debug.Log("dfgjnsldfghkl;adjifgo");
 
         // ãŽ‹“_‚Ì‚Ý
         if (!MainCameraController.eye)
         {
-            //Debug.Log("ãŽ‹“_‚¾‚æ");
             // ‘S‚Ä‚ÌáŠQ•¨‚ªŽ~‚Ü‚Á‚Ä‚¢‚È‚©‚Á‚½‚ç
             if (GameManager.StopCube)
             {
-                //Debug.Log("Ž~‚ß‚ç‚ê‚é‚æ");
                 // ‚±‚ÌáŠQ•¨‚ªŽ~‚Ü‚Á‚Ä‚¢‚È‚©‚Á‚½‚ç
                 if (moveFlag)
                 {
@@ -832,7 +785,6 @@ public class CubeContorller : MonoBehaviour
             // ‚Ç‚ê‚©1‚Â‚ÌáŠQ•¨‚ªŽ~‚Ü‚Á‚Ä‚¢‚½‚ç
             else if (!GameManager.StopCube)
             {
-                Debug.Log("Ž~‚ß‚ç‚ê‚È‚¢‚æ");
                 // Ž~‚Ü‚Á‚Ä‚¢‚éáŠQ•¨‚ª‚±‚ê‚¾‚Á‚½‚ç
                 if (!moveFlag)
                 {

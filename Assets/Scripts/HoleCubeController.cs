@@ -67,7 +67,6 @@ public class HoleCubeController : MonoBehaviour
     // マウスが当たっていたら
     public void DontMoveHoleCube()
     {
-        Debug.Log("よんだお");
         // 上視点のみ
         if (!MainCameraController.eye)
         {

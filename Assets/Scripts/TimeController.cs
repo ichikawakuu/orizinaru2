@@ -12,12 +12,6 @@ public class TimeController : MonoBehaviour
     // ŠÔ‚ğ•\¦‚·‚éTextŒ^‚Ì•Ï”
     public Text timeText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

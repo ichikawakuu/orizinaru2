@@ -15,12 +15,6 @@ public class RuleController : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnClick()
     {
         audioSource.PlayOneShot(SE);

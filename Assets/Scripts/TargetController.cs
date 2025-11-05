@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class TargetController : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         Transform myTransform = this.transform;
@@ -26,10 +25,6 @@ public class TargetController : MonoBehaviour
 
         switch (GameManager.stage)
         {
-            case 1:
-
-                break;
-
             case 2:
 
                 pos.x = 0;

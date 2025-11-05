@@ -40,14 +40,7 @@ public class WallController : MonoBehaviour
             // ブロックの動きを分ける
             switch (WallNum)
             {
-                //// 5ステ
-                //case 5.1f:
-                //
-                //    worldAngle.y += -4f;
-                //
-                //    myTransform.eulerAngles = worldAngle;
-                //
-                //    break;
+
 
                 // 6ステ
                 case 6.1f:
@@ -72,7 +65,6 @@ public class WallController : MonoBehaviour
             // 全ての障害物が止まっていなかったら
             if (GameManager.StopCube)
             {
-                Debug.Log("よんだお");
                 // この障害物が止まっていなかったら
                 if (moveFlag)
                 {
@@ -80,7 +72,6 @@ public class WallController : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         Instantiate(ClickSE);
-                        Debug.Log("よんだお");
                         moveFlag = false;
                         WallFlag = false;
                         this.GetComponent<MeshRenderer>().material = mat;
@@ -97,7 +88,6 @@ public class WallController : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         Instantiate(ClickSE);
-                        Debug.Log("よんだお");
                         moveFlag = true;
                         WallFlag = true;
                         this.GetComponent<MeshRenderer>().material = mat2;

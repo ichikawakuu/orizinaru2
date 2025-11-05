@@ -11,9 +11,6 @@ public class HoleController : MonoBehaviour
     // ブロックの動き方を管理する変数
     public float HoleNum = 0;
 
-    // 動きの切り替え用変数
-    bool move = true;
-
     // マウスの止める切り替え変数
     bool moveFlag = true;
 
@@ -79,7 +76,6 @@ public class HoleController : MonoBehaviour
             // 全ての障害物が止まっていなかったら
             if (GameManager.StopCube)
             {
-                Debug.Log("よんだお");
                 // この障害物が止まっていなかったら
                 if (moveFlag)
                 {
@@ -87,7 +83,6 @@ public class HoleController : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         Instantiate(ClickSE);
-                        Debug.Log("よんだお");
                         moveFlag = false;
                         HoleFlag = false;
                         this.GetComponent<MeshRenderer>().material = mat;
@@ -104,7 +99,6 @@ public class HoleController : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         Instantiate(ClickSE);
-                        Debug.Log("よんだお");
                         moveFlag = true;
                         HoleFlag = true;
                         this.GetComponent<MeshRenderer>().material = mat2;

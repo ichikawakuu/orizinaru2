@@ -39,11 +39,6 @@ public class playerController : MonoBehaviour
         // ステージ
         switch (GameManager.stage)
         {
-            case 1:
-
-                
-
-                break;
 
             case 2:
 
