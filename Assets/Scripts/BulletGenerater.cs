@@ -7,16 +7,18 @@ public class BulletGenerater : MonoBehaviour
     // 音を入れる変数
     public AudioClip SE2;
     AudioSource audioSource;
-
-    public GameObject Bullet2;
-
+    // 弾
+    public GameObject Bullet;
     // クールタイム変数
     bool cooltime = true;
+
+    private Transform myTransform;
+    private Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
-        Transform myTransform = this.transform;
-        Vector3 pos = myTransform.position;
+        myTransform = this.transform;
+        pos = myTransform.position;
 
         pos.x = 20;
         pos.y = 0.3f;
@@ -30,15 +32,10 @@ public class BulletGenerater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Transform myTransform = this.transform;
-        Vector3 pos = myTransform.position;
-
+        // ステージに合わせて位置を変える
         switch (GameManager.stage)
         {
-            case 1:
-
-                break;
-
+            // ステージ2
             case 2:
 
                 pos.x = 0;
@@ -47,6 +44,7 @@ public class BulletGenerater : MonoBehaviour
 
                 break;
 
+            // ステージ3
             case 3:
 
                 pos.x = 40;
@@ -55,6 +53,7 @@ public class BulletGenerater : MonoBehaviour
 
                 break;
 
+            // ステージ4
             case 4:
 
                 pos.x = 80;
@@ -63,6 +62,7 @@ public class BulletGenerater : MonoBehaviour
 
                 break;
 
+            // ステージ5
             case 5:
 
                 pos.x = 100;
@@ -71,6 +71,7 @@ public class BulletGenerater : MonoBehaviour
 
                 break;
 
+            // ステージ6
             case 6:
 
                 pos.x = 60;
@@ -86,8 +87,11 @@ public class BulletGenerater : MonoBehaviour
             // スペースキーを押したら弾を撃つ
             if (Input.GetKeyDown(KeyCode.Space) && cooltime)
             {
-                Instantiate(Bullet2, transform.position, Quaternion.identity);
+                // 弾生成
+                Instantiate(Bullet, transform.position, Quaternion.identity);
+                // クールタイム
                 StartCoroutine("BulletTime");
+                // 発射音
                 audioSource.PlayOneShot(SE2);
             }
         }
@@ -97,9 +101,7 @@ public class BulletGenerater : MonoBehaviour
     IEnumerator BulletTime()
     {
         cooltime = false;
-
         yield return new WaitForSeconds(1.0f);
-
         cooltime = true;
     }
 }

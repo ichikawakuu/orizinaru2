@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         {
             return;
         }
-        //audioSource.PlayOneShot(SE);
+        audioSource.PlayOneShot(SE);
         Instantiate(BomSE);
 
         lastExplotion = Instantiate(explotion, transform.position, transform.rotation);
