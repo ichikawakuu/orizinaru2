@@ -11,9 +11,6 @@ public class WallController : MonoBehaviour
     // ブロックの動き方を管理する変数
     public float PlacementNumber = 0;
 
-    // 動きの切り替え用変数
-    bool move = true;
-
     // マウスの止める切り替え変数
     bool moveFlag = true;
 

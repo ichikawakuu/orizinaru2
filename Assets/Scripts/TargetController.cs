@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TargetController : MonoBehaviour
 {
+    private Transform myTransform;
+    private Vector3 pos;
     void Start()
     {
-        Transform myTransform = this.transform;
-        Vector3 pos = myTransform.position;
+        // 初期位置
+        myTransform = this.transform;
+        pos = myTransform.position;
 
         pos.x = 20;
         pos.y = 0.37f;
@@ -20,11 +23,10 @@ public class TargetController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Transform myTransform = this.transform;
-        Vector3 pos = myTransform.position;
-
+        // ステージに応じて移動
         switch (GameManager.stage)
         {
+            // ステージ2
             case 2:
 
                 pos.x = 0;
@@ -33,6 +35,7 @@ public class TargetController : MonoBehaviour
 
                 break;
 
+            // ステージ3
             case 3:
 
                 pos.x = 40;
@@ -41,6 +44,7 @@ public class TargetController : MonoBehaviour
 
                 break;
 
+            // ステージ4
             case 4:
 
                 pos.x = 80;
@@ -49,6 +53,7 @@ public class TargetController : MonoBehaviour
 
                 break;
 
+            // ステージ5
             case 5:
 
                 pos.x = 100;
@@ -57,6 +62,7 @@ public class TargetController : MonoBehaviour
 
                 break;
 
+            // ステージ6
             case 6:
 
                 pos.x = 60;

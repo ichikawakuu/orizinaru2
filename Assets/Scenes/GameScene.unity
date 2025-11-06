@@ -640,7 +640,7 @@ PrefabInstance:
     - target: {fileID: 4763888155740085949, guid: 472b4569fb3aa294fb9d295973a7f0c8, type: 3}
       propertyPath: BomSE
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 473696644761670902, guid: acc779aed266b9044a51e91995f33d9c, type: 3}
     - target: {fileID: 7654813223398360339, guid: 472b4569fb3aa294fb9d295973a7f0c8, type: 3}
       propertyPath: m_Name
       value: Target
@@ -1056,6 +1056,10 @@ PrefabInstance:
       objectReference: {fileID: 1017768792805083446, guid: 670dd02414c239c47957f94a676e069f, type: 3}
     - target: {fileID: 1166832791477365, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
       propertyPath: HoleNum
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166832791477365, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
+      propertyPath: PlacementNumber
       value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 4762583790867709512, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
@@ -4528,6 +4532,10 @@ PrefabInstance:
       propertyPath: HoleNum
       value: 5.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1166832791477365, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
+      propertyPath: PlacementNumber
+      value: 5.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4762583790867709512, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4699,6 +4707,10 @@ PrefabInstance:
       objectReference: {fileID: 1017768792805083446, guid: 670dd02414c239c47957f94a676e069f, type: 3}
     - target: {fileID: 1166832791477365, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
       propertyPath: HoleNum
+      value: 5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166832791477365, guid: bac0e65f9f53c234189a946c283e3624, type: 3}
+      propertyPath: PlacementNumber
       value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 4762583790867709512, guid: bac0e65f9f53c234189a946c283e3624, type: 3}

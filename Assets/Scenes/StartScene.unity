@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0157a92223ed842937e3ffb13ce06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SE: {fileID: 8300000, guid: 19d25fb4dda3a1b4ba6f5ab91e2d8e70, type: 3}
+  buttonSE: {fileID: 8300000, guid: 19d25fb4dda3a1b4ba6f5ab91e2d8e70, type: 3}
 --- !u!82 &328162019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: StartCube
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5440600123820463960, guid: e2f8b0f9b4169f14f8d5d740cc6d93e7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1785,7 +1786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911138c139e350945a72603cdc520112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SE: {fileID: 8300000, guid: 19d25fb4dda3a1b4ba6f5ab91e2d8e70, type: 3}
+  buttonSE: {fileID: 8300000, guid: 19d25fb4dda3a1b4ba6f5ab91e2d8e70, type: 3}
 --- !u!82 &1920916391
 AudioSource:
   m_ObjectHideFlags: 0

@@ -8,21 +8,22 @@ public class StartCubeContoroller : MonoBehaviour
     [SerializeField] Material mat = default;
     [SerializeField] Material mat2 = default;
 
-    // x軸の動きの切り替え用変数
+    // x軸の動きの切り替え用
     bool moveY = true;
 
-    // x軸の動きの切り替え用変数
+    // x軸の動きの切り替え用
     bool moveX = true;
 
-    // y軸の動きを止める変数
+    // y軸の動きを止める
     bool StopMoveY = true;
 
-    // x軸の動きを止める変数
+    // x軸の動きを止める
     bool StopMoveX = true;
 
-    // マウスの止める切り替え変数
+    // マウスの止める切り替え
     bool moveFlag = true;
 
+    // マウスクリックのSE
     public GameObject ClickSE;
 
     // Start is called before the first frame update

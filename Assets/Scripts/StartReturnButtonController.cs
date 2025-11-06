@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartButtonController : MonoBehaviour
+public class StartReturnButtonController : MonoBehaviour
 {
-    // 音を入れる変数
-    public AudioClip SE;
+    // ボタンSE
+    public AudioClip buttonSE;
     AudioSource audioSource;
     
 
@@ -16,7 +16,7 @@ public class StartButtonController : MonoBehaviour
     // ボタンが押されたらスタート画面
     public void OnClick()
     {
-        audioSource.PlayOneShot(SE);
+        audioSource.PlayOneShot(buttonSE);
         SceneManager.LoadScene("StartScene");
     }
 }

@@ -19,18 +19,12 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            return;
-        }
         audioSource.PlayOneShot(SE);
         Instantiate(BomSE);
-
         lastExplotion = Instantiate(explotion, transform.position, transform.rotation);
         Destroy(gameObject);
         Destroy(lastExplotion, 1f);
     }
-
 
 
 }
