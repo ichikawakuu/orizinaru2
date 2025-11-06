@@ -2514,6 +2514,10 @@ PrefabInstance:
       propertyPath: HoleCubeNum
       value: 2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3918704578089452609, guid: 70b4e171119629047b7080504aadb22e, type: 3}
+      propertyPath: PlacementNumber
+      value: 2.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7898116397293379500, guid: 70b4e171119629047b7080504aadb22e, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -2522,7 +2526,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7898116397293379500, guid: 70b4e171119629047b7080504aadb22e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3167,7 +3172,12 @@ PrefabInstance:
       propertyPath: HoleCubeNum
       value: 3.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3918704578089452609, guid: 70b4e171119629047b7080504aadb22e, type: 3}
+      propertyPath: PlacementNumber
+      value: 3.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7898116397293379500, guid: 70b4e171119629047b7080504aadb22e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3382,7 +3392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: 6910d7292b766704d87cddecc877aa11, type: 2}
   mat2: {fileID: -876546973899608171, guid: a02334c8e03b00e4084d55b20eb1f255, type: 3}
-  WallNum: 6.1
+  PlacementNumber: 6.1
   ClickSE: {fileID: 1017768792805083446, guid: 670dd02414c239c47957f94a676e069f, type: 3}
 --- !u!65 &1215529435
 BoxCollider:
@@ -3790,7 +3800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 0}
   mat2: {fileID: 0}
-  WallNum: 0
+  PlacementNumber: 0
   ClickSE: {fileID: 0}
 --- !u!1 &1337035181
 GameObject:

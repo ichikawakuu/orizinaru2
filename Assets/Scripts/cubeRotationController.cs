@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boneCubeController : MonoBehaviour
+public class cubeRotationController : MonoBehaviour
 {
-    public int FinalNum;
+    public int PlacementNumber;
     public float speed;
 
     // Update is called once per frame
@@ -14,7 +14,7 @@ public class boneCubeController : MonoBehaviour
 
         Vector3 worldAngle = myTransform.eulerAngles;
 
-        switch (FinalNum)
+        switch (PlacementNumber)
         {
             case 1:
 

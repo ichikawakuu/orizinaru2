@@ -10,7 +10,7 @@ public class HoleCubeController : MonoBehaviour
     [SerializeField] Material mat2 = default;
 
     // ブロックの動き方を管理する変数
-    public float HoleCubeNum = 0;
+    public float PlacementNumber = 0;
 
     // 動きの切り替え用変数
     bool move = true;
@@ -40,7 +40,7 @@ public class HoleCubeController : MonoBehaviour
         if (moveFlag)
         {
             // ブロックの動きを分ける
-            switch (HoleCubeNum)
+            switch (PlacementNumber)
             {
                 // 2ステ
                 case 2.1f:

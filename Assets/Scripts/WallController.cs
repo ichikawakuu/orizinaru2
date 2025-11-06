@@ -9,7 +9,7 @@ public class WallController : MonoBehaviour
     [SerializeField] Material mat2 = default;
 
     // ブロックの動き方を管理する変数
-    public float WallNum = 0;
+    public float PlacementNumber = 0;
 
     // 動きの切り替え用変数
     bool move = true;
@@ -38,7 +38,7 @@ public class WallController : MonoBehaviour
         if (moveFlag)
         {
             // ブロックの動きを分ける
-            switch (WallNum)
+            switch (PlacementNumber)
             {
 
 
