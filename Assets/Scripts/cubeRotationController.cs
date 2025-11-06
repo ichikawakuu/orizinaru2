@@ -11,7 +11,6 @@ public class cubeRotationController : MonoBehaviour
     void Update()
     {
         Transform myTransform = this.transform;
-
         Vector3 worldAngle = myTransform.eulerAngles;
 
         switch (PlacementNumber)

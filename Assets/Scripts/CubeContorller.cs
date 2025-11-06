@@ -11,25 +11,25 @@ public class CubeContorller : MonoBehaviour
 
     RaycastHit hit;
     GameObject targetObject;
-    // ブロックの動き方を管理する変数
-    public float CubeNum = 0;
+    // ブロックの動き方を管理する
+    public float PlacementNumber = 0;
 
-    // x軸の動きの切り替え用変数
+    // x軸の動きの切り替え用
     bool moveX = true;
 
-    // z軸の動きの切り替え用変数
+    // z軸の動きの切り替え用
     bool moveZ = true;
 
-    // x軸の動きを止める変数
-    bool StopMoveX = true;
+    // x軸の動きを止める
+    bool StopMoveX;
 
-    // z軸の動きを止める変数
-    bool StopMoveZ = true;
+    // z軸の動きを止める
+    bool StopMoveZ;
 
-    // マウスの止める切り替え変数
+    // マウスの止める切り替え
     bool moveFlag = true;
 
-    // 止めたブロックの制限変数
+    // 止めたブロックの制限
     public static bool CubeFlag = true;
 
     public GameObject ClickSE;
@@ -38,52 +38,8 @@ public class CubeContorller : MonoBehaviour
     void Start()
     {
         CubeFlag = true;
-
-
-        switch (CubeNum)
-        {
-            case 4.1f:
-
-                // x軸の動きを止める
-                StopMoveX = false;
-
-                break;
-
-            case 4.2f:
-
-                // x軸の動きを止める
-                StopMoveX = false;
-
-                break;
-
-            case 4.3f:
-
-                // x軸の動きを止める
-                StopMoveX = false;
-
-                break;
-
-            case 4.4f:
-
-                // z軸の動きを止める
-                StopMoveZ = false;
-
-                break;
-
-            case 6.1f:
-
-                // x軸の動きを止める
-                StopMoveX = false;
-
-                break;
-
-            case 6.2f:
-
-                // x軸の動きを止める
-                StopMoveX = false;
-
-                break;
-        }
+        StopMoveX = false;
+        StopMoveZ = true;
     }
 
     // Update is called once per frame
@@ -96,10 +52,10 @@ public class CubeContorller : MonoBehaviour
         {
 
             // ブロックの動きを分ける
-            switch (CubeNum)
+            switch (PlacementNumber)
             {
 
-                // ルール
+                // ルール画面
                 case 0.1f:
 
                     // 縦軸移動 x→y
@@ -130,7 +86,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 1ステ
+                // ステージ1
                 case 1.1f:
 
                     if (pos.x < 19)
@@ -157,7 +113,7 @@ public class CubeContorller : MonoBehaviour
                     
 
                     break;
-                // 2ステ下
+                // ステージ2下
                 case 2.1f:
 
                     if (pos.x < 0.3)
@@ -183,7 +139,7 @@ public class CubeContorller : MonoBehaviour
                     }
                     break;
 
-                // 2ステ上
+                // ステージ2上
                 case 2.2f:
 
                     if (pos.x > -0.3)
@@ -210,7 +166,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 3ステ左
+                // ステージ3左
                 case 3.1f:
 
                     if (pos.x < 39)
@@ -237,7 +193,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 3ステ真ん中
+                // ステージ3真ん中
                 case 3.2f:
 
                     if (pos.x < 39)
@@ -264,7 +220,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 3ステ右
+                // ステージ3右
                 case 3.3f:
 
                     if (pos.x < 39)
@@ -291,7 +247,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 4ステ真ん中
+                // ステージ4真ん中
                 case 4.1f:
 
                     // z軸の移動
@@ -302,7 +258,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            Debug.Log("超えたよ");
                         }
                         else if (pos.z < -0.3)
                         {
@@ -365,6 +320,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
+                // ステージ4左
                 case 4.2f:
 
                     // z軸の移動
@@ -375,7 +331,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            Debug.Log("超えたよ");
                         }
                         else if (pos.z < -1.8)
                         {
@@ -438,6 +393,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
+                // ステージ4右
                 case 4.3f:
 
                     // z軸の移動
@@ -448,7 +404,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            Debug.Log("超えたよ");
                         }
                         else if (pos.z < 1.2)
                         {
@@ -462,7 +417,6 @@ public class CubeContorller : MonoBehaviour
                     {
                         if (pos.x > 80)
                         {
-                            Debug.Log(StopMoveZ);
                             StopMoveX = false;
                             StopMoveZ = true;
                             moveZ = false;
@@ -511,6 +465,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
+                // ステージ4外周
                 case 4.4f:
 
                     // z軸の移動
@@ -521,7 +476,6 @@ public class CubeContorller : MonoBehaviour
                             StopMoveX = true;
                             StopMoveZ = false;
                             moveX = true;
-                            Debug.Log("超えたよ");
                         }
                         else if (pos.z < -3)
                         {
@@ -584,7 +538,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
-                // 5ステ
+                // ステージ5
                 case 5.1f:
 
                     if (pos.x < 99)
@@ -611,6 +565,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
+                // ステージ6内側
                 case 6.1f:
                     
                     // z軸の移動
@@ -681,6 +636,7 @@ public class CubeContorller : MonoBehaviour
 
                     break;
 
+                // ステージ6外側
                 case 6.2f:
 
                     // z軸の移動
@@ -748,9 +704,7 @@ public class CubeContorller : MonoBehaviour
                             myTransform.position = pos;
                         }
                     }
-
                     break;
-
             }
 
 

@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class Mousecheck : MonoBehaviour
 {
-    // レイが衝突したオブジェクトを保持する変数
+    // レイが衝突したオブジェクトを保持する
     private RaycastHit hitInfo;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         // マウスのスクリーン座標を取得

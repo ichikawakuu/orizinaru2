@@ -5,18 +5,18 @@ using UnityEngine.UIElements;
 
 public class MainCameraController : MonoBehaviour
 {
+    // 視点切替用
     public static bool eye = true;
+    private Transform myTransform;
+    private Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
         eye = true;
 
         // カメラの初期位置
-        // transformを取得
-        Transform myTransform = this.transform;
-
-        // 位置
-        Vector3 pos = myTransform.position;
+        myTransform = this.transform;
+        pos = myTransform.position;
 
         pos.x = 0;
         pos.y = 0.37f;
@@ -39,11 +39,6 @@ public class MainCameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // transformを取得
-        Transform myTransform = this.transform;
-
-        Vector3 pos = myTransform.position;
-
         Vector3 rot = myTransform.eulerAngles;
 
         // 右クリックしたら視点を切り替える
@@ -62,6 +57,7 @@ public class MainCameraController : MonoBehaviour
         // ステージ
         switch (GameManager.stage)
         {
+            // ステージ1
             case 1:
 
                 // 上から視点
@@ -98,6 +94,7 @@ public class MainCameraController : MonoBehaviour
 
                 break;
 
+            // ステージ2
             case 2:
 
                 // 上から視点
@@ -134,6 +131,7 @@ public class MainCameraController : MonoBehaviour
 
                 break;
 
+            // ステージ3
             case 3:
 
                 // 上から視点
@@ -170,6 +168,7 @@ public class MainCameraController : MonoBehaviour
 
                 break;
 
+            // ステージ4
             case 4:
 
                 // 上から視点
@@ -206,6 +205,7 @@ public class MainCameraController : MonoBehaviour
 
                 break;
 
+            // ステージ5
             case 5:
 
                 // 上から視点
@@ -242,6 +242,7 @@ public class MainCameraController : MonoBehaviour
 
                 break;
 
+            // ステージ6
             case 6:
 
                 // 上から視点

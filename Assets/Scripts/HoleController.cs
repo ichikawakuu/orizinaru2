@@ -9,7 +9,7 @@ public class HoleController : MonoBehaviour
     [SerializeField] Material mat2 = default;
 
     // ブロックの動き方を管理する変数
-    public float HoleNum = 0;
+    public float PlacementNumber = 0;
 
     // マウスの止める切り替え変数
     bool moveFlag = true;
@@ -17,6 +17,7 @@ public class HoleController : MonoBehaviour
     // 止めたブロックの制限変数
     public static bool HoleFlag = true;
 
+    // クリックSE
     public GameObject ClickSE;
 
     // Start is called before the first frame update
@@ -35,8 +36,9 @@ public class HoleController : MonoBehaviour
         if (moveFlag)
         {
             // ブロックの動きを分ける
-            switch (HoleNum)
+            switch (PlacementNumber)
             {
+                // ステージ5左
                 case 5.1f:
 
                     worldAngle.y += 8f;
@@ -45,6 +47,7 @@ public class HoleController : MonoBehaviour
 
                     break;
 
+                // ステージ5右
                 case 5.2f:
 
                     worldAngle.y -= 2f;
@@ -53,7 +56,7 @@ public class HoleController : MonoBehaviour
 
                     break;
 
-                // 6ステ
+                // ステージ6
                 case 6.1f:
 
                     worldAngle.y += 4f;

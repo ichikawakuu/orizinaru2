@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
-    // ‰¹‚ğ“ü‚ê‚é•Ï”
-    public AudioClip SE;
+    // ƒ{ƒ^ƒ“SE
+    public AudioClip buttonSE;
     AudioSource audioSource;
     
 
@@ -17,7 +17,7 @@ public class GameOverController : MonoBehaviour
     }
     public void OnClick()
     {
-        audioSource.PlayOneShot(SE);
+        audioSource.PlayOneShot(buttonSE);
         SceneManager.LoadScene("StartScene");
     }
 }

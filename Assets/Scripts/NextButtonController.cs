@@ -18,19 +18,11 @@ public class NextButtonController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //NextStage = 0;
         audioSource = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     // èâÇﬂÇ©ÇÁÇ…Ç∑ÇÈä÷êî
     public void newStart()
     {
-        Debug.Log("åƒÇŒÇÍÇ‹ÇµÇΩ");
         NextStage = 0;
     }
 

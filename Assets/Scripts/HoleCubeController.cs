@@ -12,9 +12,6 @@ public class HoleCubeController : MonoBehaviour
     // ブロックの動き方を管理する変数
     public float PlacementNumber = 0;
 
-    // 動きの切り替え用変数
-    bool move = true;
-
     // マウスの止める切り替え変数
     bool moveFlag = true;
 
@@ -33,7 +30,6 @@ public class HoleCubeController : MonoBehaviour
     void Update()
     {
         Transform myTransform = this.transform;
-
         Vector3 worldAngle = myTransform.eulerAngles;
 
 
@@ -42,7 +38,7 @@ public class HoleCubeController : MonoBehaviour
             // ブロックの動きを分ける
             switch (PlacementNumber)
             {
-                // 2ステ
+                // ステージ2
                 case 2.1f:
 
                     worldAngle.y += 4;
@@ -51,7 +47,7 @@ public class HoleCubeController : MonoBehaviour
 
                     break;
 
-                // 3ステ
+                // ステージ3
                 case 3.1f:
 
                     worldAngle.y += 4;
