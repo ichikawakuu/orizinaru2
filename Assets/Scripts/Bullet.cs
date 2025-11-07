@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // 音を入れる変数
-    public AudioClip SE;
+    // 着弾SE
+    public AudioClip BomSE;
     AudioSource audioSource;
 
+    // 爆発エフェクト
     public GameObject explotion;
     GameObject lastExplotion;
 
-    public GameObject BomSE;
+    public GameObject BomSEPrefab;
 
     void Start()
     {
@@ -19,10 +20,11 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        audioSource.PlayOneShot(SE);
-        Instantiate(BomSE);
+        // 着弾時爆発させる
+        audioSource.PlayOneShot(BomSE);
+        Instantiate(BomSEPrefab);
         lastExplotion = Instantiate(explotion, transform.position, transform.rotation);
-        Destroy(gameObject);
+        Destroy(gameObject, 0.01f);
         Destroy(lastExplotion, 1f);
     }
 
